@@ -1,0 +1,134 @@
+/* For theme change */
+
+#theme-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #596AFF;
+  }
+  #theme-btn:hover {
+    color: #BB86FC;
+  }
+  .changeTheme {
+    background: #1D1E22;
+    color: #eee;
+  }
+
+  .loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.image{
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      
+    background-color:#0f121d;
+      overflow-x: hidden;
+  }
+  .container{
+      color:white;
+  }
+  
+  /* style for navbar */
+  nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10px;
+      color: white;
+      background-color: #161b22;
+  }
+  .links ul{
+      list-style-type: none;
+      display: flex;
+  }
+  .links ul li{
+      padding: 0 20px;
+      font-size: 18px;
+  }
+  .links li a{
+      text-decoration: none;
+      color: white;
+  }
+  
+  .links ul li.cur a{
+    color: #27dabc;
+  }
+  .links ul li a:hover{
+      color: #27dabc;
+  }
+  .heading{
+      font-size: 30px;
+  }
+  
+   
+  /* for pokedex page */
+  .imgandtext{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 1px solid #323232;
+      padding: 30px 20px;
+  }
+  .imgandtext img{
+      height: 250px;
+      width: 500px;
+      cursor: pointer;
+  }
+  .insideimg{
+      flex: 1;
+      text-align: center;
+      align-items: center;
+  }
+  .text{
+      flex:1;
+      font-size: 18px;
+  }
+  .container h4{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+  }
+  .top-heading{
+    font-size: 40px;
+    font-style: italic;
+  }
+  .top-heading img{
+    height: 35px;
+  }
+  
+/* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 1030px){
+      .imgandtext{
+        flex-direction: column;
+      }
+      .imgandtext img{
+        width: 80%;
+        margin: 35px;
+      }
+    }
+  
+  
